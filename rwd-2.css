@@ -1,0 +1,127 @@
+html {
+    background-color: var(--primary-gray-dark);
+    font-family: var(--primary-font-family);
+}
+
+/* 垂直置中 3，for tag */
+/* .container-wrapper { */
+/*     margin: auto; */
+/*     display: flex; */
+/*     justify-content: center; */
+/*     align-items: center; */
+/*     height: 100vh; */
+/* } */
+
+.container {
+    /* 垂直置中 1 */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+
+    /* 垂直置中 2 */
+    /* position: absolute; */
+    /* top:50%; */
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
+
+    /* 垂直置中 3，for tag */
+    /*position: relative;*/
+
+    background-color: var(--primary-black);
+    border: 1px solid var(--primary-green);
+    width: 280px;
+    height: 280px;
+}
+
+.container-inner {
+    width: 180px;
+    padding: 68px 50px;
+}
+
+.tag-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-right: 100px solid transparent;
+    border-top: 100px solid var(--primary-green);
+}
+
+.tag-text {
+    width: 65px;
+    position: absolute;
+    top: -70px;
+    left: 7px;
+    color: var(--primary-gray-dark);
+    transform: rotate(314deg);
+    font-family: var(--secondary-font-family);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0.01em;
+    text-align: left;
+}
+
+.content {
+    width: 100%;
+    height: 92px;
+    margin-bottom: 12px;
+}
+
+.content p:nth-child(1) {
+    color: var(--primary-white);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    margin-bottom: 5px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    letter-spacing: 1px;
+}
+
+.content p:nth-child(2) {
+    color: var(--primary-green);
+    font-family: var(--secondary-font-family);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.content p:nth-child(3) {
+    color: var(--primary-gray);
+    font-family: var(--secondary-font-family);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.container-button {
+    color: var(--primary-green);
+    border: 1px solid var(--primary-green);
+    border-radius: 4px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.container-button-arrow {
+    margin-left: 5px;
+}

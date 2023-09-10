@@ -1,0 +1,69 @@
+html {
+    background-color: var(--primary-gray-dark);
+    font-family: var(--primary-font-family);
+}
+
+.container-wrapper {
+    display: flex;
+    padding: 40px 200px;
+}
+
+.sidebar {
+    border-right: 1px solid var(--secondary-gray);
+    width: 250px;
+    height: 100vh;
+}
+
+.sidebar-title {
+    color: var(--primary-green);
+    font-size: 18px;
+    padding: 10px 30px;
+}
+
+.sidebar ul {
+    width: 150px;
+    margin: 10px 20px;
+    padding: 10px 30px;
+    border-bottom: 1px solid var(--secondary-gray);
+}
+
+.sidebar li {
+    font-size: 16px;
+    color: var(--secondary-gray);
+    padding: 10px;
+}
+
+.sidebar li:hover, .sidebar li:active {
+    color: var(--primary-green);
+    cursor: pointer;
+}
+
+.container-form {
+    padding: 10px 50px;
+}
+
+.input-group {
+    border: 1px solid red;
+}
+
+.input-label {
+    color: var(--primary-white);
+    margin: 5px;
+}
+
+.input {
+    padding: 8px;
+    border-radius: 4px;
+}
+
+@media screen and (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+
+    /* 在小屏幕上顯示下拉選單，可以使用 JavaScript 實現下拉選單的顯示/隱藏功能 */
+    .dropdown-menu {
+        display: block;
+        /* 其他下拉選單樣式屬性 */
+    }
+}
