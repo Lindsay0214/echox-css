@@ -3,9 +3,14 @@ html {
     font-family: var(--primary-font-family);
 }
 
+a {
+    text-decoration: underline;
+}
+
 .container-wrapper {
+    padding: 40px 180px;
     display: flex;
-    padding: 40px 200px;
+    justify-content: center;
 }
 
 .sidebar {
@@ -23,7 +28,7 @@ html {
 .sidebar ul {
     width: 150px;
     margin: 10px 20px;
-    padding: 10px 30px;
+    padding: 10px 0px 20px 10px;
     border-bottom: 1px solid var(--secondary-gray);
 }
 
@@ -38,22 +43,163 @@ html {
     cursor: pointer;
 }
 
+.sidebar li:active::after {
+    content: "————>";
+    color: var(--primary-green);
+    padding-left: 10px;
+}
+
 .container-form {
     padding: 10px 50px;
+    width: 880px;
 }
 
 .input-group {
-    border: 1px solid red;
+    display: flex;
+    flex-flow: column;
+    margin-bottom: 18px;
 }
 
 .input-label {
     color: var(--primary-white);
-    margin: 5px;
+    margin: 10px;
 }
 
 .input {
-    padding: 8px;
+    padding: 12px;
+    margin: 0px 10px;
     border-radius: 4px;
+}
+
+.form-content {
+    margin: 40px 10px;
+    display: flex;
+    flex-flow: row;
+    gap: 10px 20px;
+    padding-bottom: 28px;
+    border-bottom: 2px solid var(--primary-green);
+}
+
+.form-content p {
+    color: var(--primary-white);
+    padding: 5px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 26px;
+    letter-spacing: 1px;
+}
+
+.content-text p:nth-child(2) {
+    color: var(--primary-green);
+}
+
+.content-text {
+    width: 280px;
+}
+
+.content-image {
+    background-color: var(--primary-gray);
+    border: 1px solid var(--primary-green);
+    width: 200px;
+    height: 180px;
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-image p {
+    color: var(--primary-black);
+    font-weight: 500;
+}
+
+.content-extra-info p {
+    padding: 0px 10px;
+    margin-top: 45px;
+    font-weight: 500;
+}
+
+.content-extra-info ul {
+    color: var(--primary-white);
+    font-weight: 300;
+    list-style-type: disc;
+    padding: 16px 32px;
+    font-size: 14px;
+}
+
+.content-extra-info li {
+    padding: 5px 0px;
+}
+
+
+.button-group {
+    margin: 40px 10px;
+}
+
+.button-group button {
+    font-size: 16px;
+    font-weight: 500;
+    width: 150px;
+    padding: 10px 40px;
+    border-radius: 4px;
+    background-color: transparent;
+    letter-spacing: 1px;
+}
+
+.button-group button:nth-child(1) {
+    border: 1px solid var(--secondary-gray);
+    color: var(--secondary-gray);
+}
+
+.button-group button:nth-child(2) {
+    color: var(--primary-black);
+    background-color: var(--primary-green);
+    border: 1px solid var(--primary-green);
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 1340px) {
+    .sidebar {
+        display: none;
+    }
+    /* 在小屏幕上顯示下拉選單，可以使用 JavaScript 實現下拉選單的顯示/隱藏功能 */
+    .dropdown-menu {
+        display: block;
+        /* 其他下拉選單樣式屬性 */
+    }
+
+    .form-content {
+        flex-flow: column;
+    }
+
+    .content-text {
+        width: 680px;
+    }
+
+    .content-image {
+        width: 680px;
+        height: 320px;
+        margin-top: 15px;
+    }
+
+    .content-extra-info p {
+        padding: 0px;
+        margin-top: 20px;
+    }
+
+    .button-group {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .button-group button {
+        width: 680px;
+    }
+
+    .button-group button:nth-child(2) {
+        margin-left: 0px;
+        margin-top: 15px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -65,5 +211,29 @@ html {
     .dropdown-menu {
         display: block;
         /* 其他下拉選單樣式屬性 */
+    }
+
+    .container-form {
+        width: 335px;
+        padding: 0px 0px;
+    }
+
+    .content-text {
+        width: 315px;
+    }
+
+    .content-image {
+        width: 315px;
+        height: 180px;
+        margin-top: 5px;
+    }
+
+    .form-content {
+        margin: 5px 10px;
+        padding-bottom: 5px;
+    }
+
+    .button-group button {
+        width: 315px;
     }
 }
