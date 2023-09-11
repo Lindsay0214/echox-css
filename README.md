@@ -1,20 +1,24 @@
 # echox-css
 ### CSS-1
 Desktop
-![截圖 2023-09-12 上午1.40.29.png](..%2F..%2FDesktop%2F%E6%88%AA%E5%9C%96%202023-09-12%20%E4%B8%8A%E5%8D%881.40.29.png)
+![](https://hackmd.io/_uploads/SyeqMA3R3.png)
+
 Mobile
-![截圖 2023-09-12 上午1.41.00.png](..%2F..%2FDesktop%2F%E6%88%AA%E5%9C%96%202023-09-12%20%E4%B8%8A%E5%8D%881.41.00.png)
+![](https://hackmd.io/_uploads/H1xcMA2Cn.png)
 
 ### CSS-2
 Desktop
-![截圖 2023-09-12 上午1.41.14.png](..%2F..%2FDesktop%2F%E6%88%AA%E5%9C%96%202023-09-12%20%E4%B8%8A%E5%8D%881.41.14.png)
+![](https://hackmd.io/_uploads/SkgcMRhCn.png)
+
 Mobile
-![截圖 2023-09-12 上午1.41.25.png](..%2F..%2FDesktop%2F%E6%88%AA%E5%9C%96%202023-09-12%20%E4%B8%8A%E5%8D%881.41.25.png)
+![](https://hackmd.io/_uploads/BJe9GChA3.png)
+
 *不同垂直置中方式統一放 `rwd-2.css` 中
 
 ### CSS-3
 Desktop
-![截圖 2023-09-12 上午1.41.39.png](..%2F..%2FDesktop%2F%E6%88%AA%E5%9C%96%202023-09-12%20%E4%B8%8A%E5%8D%881.41.39.png)
+![](https://hackmd.io/_uploads/BJg9zA20n.png)
+
 Mobile
-![截圖 2023-09-12 上午1.42.11.png](..%2F..%2FDesktop%2F%E6%88%AA%E5%9C%96%202023-09-12%20%E4%B8%8A%E5%8D%881.42.11.png)
-![截圖 2023-09-12 上午1.42.20.png](..%2F..%2FDesktop%2F%E6%88%AA%E5%9C%96%202023-09-12%20%E4%B8%8A%E5%8D%881.42.20.png)
+![](https://hackmd.io/_uploads/HJx5zC3Rh.png)
+![](https://hackmd.io/_uploads/Bkg9zR30h.png)
