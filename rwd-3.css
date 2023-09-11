@@ -13,10 +13,18 @@ a {
     justify-content: center;
 }
 
+.dropdown-menu {
+    display: none;
+}
+
 .sidebar {
     border-right: 1px solid var(--secondary-gray);
     width: 250px;
-    height: 100vh;
+    height: 1020px;
+    position: fixed;
+    top: 40px;
+    left: 180px;
+    overflow-y: auto;
 }
 
 .sidebar-title {
@@ -27,15 +35,15 @@ a {
 
 .sidebar ul {
     width: 150px;
-    margin: 10px 20px;
-    padding: 10px 0px 20px 10px;
+    margin: 0px 20px;
+    padding: 0px 0px 20px 35px;
     border-bottom: 1px solid var(--secondary-gray);
 }
 
 .sidebar li {
     font-size: 16px;
     color: var(--secondary-gray);
-    padding: 10px;
+    padding: 5px 10px;
 }
 
 .sidebar li:hover, .sidebar li:active {
@@ -43,15 +51,20 @@ a {
     cursor: pointer;
 }
 
-.sidebar li:active::after {
-    content: "————>";
+.sidebar li:nth-child(5) {
     color: var(--primary-green);
-    padding-left: 10px;
+}
+
+.sidebar li:nth-child(5)::after {
+    content: "———→";
+    color: var(--primary-green);
+    padding-left: 22px;
 }
 
 .container-form {
-    padding: 10px 50px;
+    padding: 10px 50px 10px 272px;
     width: 880px;
+    height: 10000px;
 }
 
 .input-group {
@@ -162,10 +175,40 @@ a {
     .sidebar {
         display: none;
     }
-    /* 在小屏幕上顯示下拉選單，可以使用 JavaScript 實現下拉選單的顯示/隱藏功能 */
+
     .dropdown-menu {
         display: block;
-        /* 其他下拉選單樣式屬性 */
+        margin: 0px 10px;
+        position: fixed;
+        top: 0;
+        background-color: var(--primary-gray-dark);
+        width: 100%;
+        padding: 20px 0 0 160px;
+    }
+
+    .dropdown-title {
+        color: var(--primary-green);
+        font-size: 16px;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+    }
+
+    .dropdown-select {
+        width: 680px;
+        cursor: pointer;
+        padding: 12px;
+        border-radius: 4px;
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
+
+    .dropdown-select option {
+        font-size: 14px;
+    }
+
+    .container-form {
+        padding: 100px 0 0 0;
+        height: 100%;
     }
 
     .form-content {
@@ -203,19 +246,19 @@ a {
 }
 
 @media screen and (max-width: 768px) {
-    .sidebar {
-        display: none;
+    .dropdown-select {
+        width: 315px;
     }
 
-    /* 在小屏幕上顯示下拉選單，可以使用 JavaScript 實現下拉選單的顯示/隱藏功能 */
     .dropdown-menu {
-        display: block;
-        /* 其他下拉選單樣式屬性 */
+        background-color: var(--primary-gray-dark);
+        width: 100%;
+        padding: 20px 0 0 100px;
     }
 
     .container-form {
         width: 335px;
-        padding: 0px 0px;
+        padding: 60px 0 0 0;
     }
 
     .content-text {
